@@ -1,103 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css"  rel="stylesheet" href="text/css">
-    <title>cuisine</title>
-</head><title>International cusine</title>
- <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    h1 {
-      background-color: lightseagreen;
-      color: white;
-      padding: 10px;
-    }
-    h2 {
-      background-color: rgb(220, 220, 170);
-      padding: 5px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    img {
-      width: 300px;
-      height: auto;
-      display: block;
-      margin-top: 10px;
-    }
-     /* Footer Styling */
+    <title>Cuisine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f8d9;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #ff6b35;
+        }
+        
+        h1 {
+            color: #ff6b35;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .cuisine-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f1dcb4;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        h2 {
+            color: #465f3e;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #e67e22;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .food-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .food-category {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .food-category h4 {
+            color: #919ee9;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #7f8ae0;
+            padding-bottom: 5px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+        
+        .separator {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #bfc5ed, transparent);
+            margin: 30px 0;
+        }
+        
         footer {
             text-align: center;
             margin-top: 40px;
-            padding: 10px;
-            border-top: 1px solid #ccc;
-            font-size: 14px;
-            color: #555;
+            padding-top: 20px;
+            border-top: 2px solid #cbb8e9;
+            color: #777;
+            font-style: italic;
         }
-    
-  </style>
-    <body>
-    <h1><mark>INTERNATIONAL CUISINE</mark></h1>
-    <br>
-    <p>The word "cuisine" means a style or method of cooking, especially as characteristic of a particular country,
-        region, or
-        culture. It can also refer to the food itself that is prepared in that style.
-    </p>
-
-    <ul>
-    <li>italian </li>
-    <li>japanese</li>
-    <li>indian</li>
-    </ul>
-
-
-  <div class="section">
-    <h2>italian Food</h2>
-    <img src="./italy.jpg" alt=" ">
-    <p>Italian cuisine is a Mediterranean style of cooking known for its simplicity, fresh ingredients, and rich
-        flavors. It
-        emphasizes pasta, olive oil, tomatoes, garlic, and fresh herbs like basil and oregano. Dishes often include
-        regional
-        cheeses, cured meats, seafood, and bread, with popular items like pizza, risotto, and gelato. Each region in
-        Italy has
-        its own specialties, reflecting local traditions and ingredients.</p>
-
-    
-    <!-- japanese -->
-     <div class="section"> 
-    <h2>japanese cuisine</h2>
-    <p>Japanese cuisine is known for its emphasis on seasonal ingredients, balance, and presentation. It features rice,
-        seafood, soy-based products (like tofu and miso), and vegetables. Popular dishes include sushi, sashimi,
-        tempura, ramen,
-        and bento boxes. Japanese meals often highlight umami (a savory taste) and are typically low in fat, with
-        careful
-        attention to texture and visual appeal.</p>
-    <img src="./japan.jpg" alt="">
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .food-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cuisine</h1>
+            <p class="intro">
+                Cuisine is more than just food—it reflects the culture, history, and traditions of a place. Each cuisine carries unique flavors, cooking methods, and ingredients that tell stories about the people who prepare and enjoy them. For example, spices in Indian cuisine show the region’s love for bold, layered tastes, while Japanese cuisine highlights simplicity and freshness. Beyond nourishment, cuisine often brings people together, whether through family meals, festivals, or street food shared with friends. In this way, it connects
+            </p>
+        </header>
 
 
+        <!-- indian -->
+        <div class="cuisine-section">
+            <h2>INDIAN  CUISINE</h2>
+            <p>Indian cuisine is famous for its rich flavors, spices, and variety. Each region has special dishes—like biryani and naan in the north, or dosa and idli in the south. It is not just food but also a part of tradition and togetherness.
+           </p>
+           <img src="./india.jpg" alt="">
+        </div>
 
+        <!-- italian -->
+        <div class="cuisine-section">
+            <h2>ITALIAN CUISNE</h2>
+            <p>Italian cuisine is known for its simplicity, fresh ingredients, and delicious flavors. Popular dishes include pasta, pizza, and risotto, often made with herbs, olive oil, and cheese. It focuses on quality and tradition, making it loved all around the world.
+            </p>
+            <img src="./italy.jpg" alt="">
+        </div>
 
-    <!-- indian -->
-     <div class="section">
-    <h2>indian cuisine</h2>
-    <p>Indian cuisine is diverse and rich in flavor, known for its bold use of spices, herbs, and aromatic ingredients.
-        It
-        varies widely by region but commonly includes rice, lentils (dal), flatbreads (like roti or naan), and a variety
-        of
-        vegetarian and meat curries. Signature spices include turmeric, cumin, coriander, garam masala, and chili.
-        Indian food
-        often balances flavors like sweet, sour, spicy, and savory in a single dish..</p>
-    <img src="./india.jpg" alt="">
+        <!-- japanese -->
 
+        <div class="cuisine-section">
+            <h2>JAPANESE CUISINE</h2>
+            <p>Japanese cuisine is famous for its freshness, balance, and presentation. Popular dishes include sushi, ramen, and tempura, often made with rice, seafood, and seasonal vegetables. It values simplicity and harmony, making it both healthy and delicious.
+            </p>
+            <img src="./japan.jpg" alt="">
+        </div>
+        
+        <div class="separator"></div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>author:mehrish</p>
-        <p>8/8/25</p>
-    </footer>
+        <h2>Popular Foods Across the world</h2>
+        <div class="food-list">
+            <div class="food-category">
+                <h4>italian </h4>
+                <ul>
+                    <li>pizza</li>
+                    <li>pasta</li>
+                    <li>risotto</li>
+                </ul>
+            </div>
+            
+            <div class="food-category">
+                <h4>japanese</h4>
+                <ul>
+                    <li>ramen</li>
+                    <li>sushi</li>
+                    <li>tokatsu</li>
+                </ul>
+            </div>
+            
+            <div class="food-category">
+                <h4>indian</h4>
+                <ul>
+                    <li>Chicken Biryani</li>
+                    <li>Butter Chicken</li>
+                    <li>Naan Bread</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Published By: mehrish</p>
+            <p>Date: 8/6/25</p>
+        </footer>
+    </div>
 </body>
+</html>
