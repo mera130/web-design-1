@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d9b0d3; 
+      text-align: center;
+      padding: 50px;
+    }
+
+    button {
+      background-color: #6ec371; 
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3f9143; 
+    }
+
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="document.getElementById('output').innerText='I have many hobbies such as drawing, listening to music, debating, reading'">
+    My Hobbies
+  </button>
+
+  <p id="output"></p>
+
+</body>
+</html>
